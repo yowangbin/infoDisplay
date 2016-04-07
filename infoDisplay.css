@@ -1,0 +1,161 @@
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#infoDisplayContainer,
+#infoDisplayButton {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#infoDisplayButton {
+    top: 60%;
+    right: 3%;
+}
+
+#infoDisplayContainer {
+    background-color: #FFFFFF;
+    top: 2%;
+    right: 1%;
+    width: 345px;
+    height: 84%;
+    padding: 20px;
+}
+
+#scroller {
+    height: 570px;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.list-group{
+    height: 85%;
+    overflow: auto;
+}
+
+
+#hacker-list {
+    height: 100%;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 0;
+}
+
+.place {
+    display: inline-block;
+    /*color: red;*/
+    width: 218px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.panel {
+    width: 200px;
+    height: 220px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.mapSelected {
+    background: #ddd;
+    color: #f00;
+}
+
+.sortButton {
+    margin: 0 0 3px 0;
+}
+
+.lookup{
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.55);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+}
+.lookup:hover{
+    background-color: #e0e0e0;
+}
+.topleft{
+    background-image: url("images/SelectPng.png");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    top: 65px;
+    left: 65px;
+}
+.bottomleft{
+    background-image: url("images/SelectPng.png");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    bottom: 60px;
+    left: 15px;
+}
+.btn,.btn-default{
+    width: 77px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*****START list item style*****/
+li{
+    list-style-type:none;
+}
+.list-group{
+    border-top: 1px solid #cccccc;
+    border-left:1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+.group-item:hover {
+    background: #ddd;
+    color: #f00;
+    cursor: pointer;
+}
+.group-item{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    height: 60px;
+}
+.plat,.speed{
+    margin: 7px 0;
+    float: left;
+    width: auto;
+    padding-right:30px;
+}
+.load_status{
+    margin: 7px 0;
+    float: right;
+    width: auto;
+    padding-right:13px;
+}
+.item-left{
+    display: inline-block;
+    padding: 3px;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+.item-body{
+    display: inline-block;
+    width:80%;
+    float: right;
+    height: 100%;
+}
+/*********END**********/
