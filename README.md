@@ -14,15 +14,6 @@
 
 #### Usage
 ```javascript
-// 图吧初始化
-window.maplet = null;
-maplet = new Maplet("map");
-maplet.clickToCenter = false;
-maplet.centerAndZoom(new MPoint(115.38672, 33.90805), 2);
-maplet.addControl(new MStandardControl());
-maplet.setOverviewLocation({
-    type: eval("Maplet." + 'LEFT_BOTTOM')
-})
 var listOptions = {
     // 配置不同类型数据所对应的不同图像信息
     types: {
@@ -85,21 +76,10 @@ $.ajax({
     url: '../dist/infoDisplay/data/data' + 1 + '.json',
     dataType: 'json',
     success: function(msg) {
+    // 添加数据
         var L = info.addData(msg);
     }
 });
-window.setInterval(function() {
-    var url = '../dist/infoDisplay/data/data' + i + '.json';
-    $.ajax({
-        type: "GET",
-        url: url,
-        dataType: 'json',
-        success: function(msg) {
-            var L = info.addData(msg);
-        }
-    });
-    i++;
-}, 8000);
 ```
 #### License
 MIT
