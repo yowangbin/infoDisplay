@@ -51,6 +51,7 @@ var listOptions = {
     // 配置是否以异步方式添加列表索引，数据大于500条时可开启
     indexAsync: false
 };
+
 var mapOptions = {
     // 是否为动态资源
     dynamic: true,
