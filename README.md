@@ -82,6 +82,7 @@ $.ajax({
     }
 });
 ```
+
 #### License
 MIT
 
